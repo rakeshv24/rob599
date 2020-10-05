@@ -8,6 +8,7 @@
 # being defined and compiled first.
 
 
+# Import what we need.
 import rospy
 import sys
 
@@ -31,7 +32,7 @@ if __name__ == '__main__':
 	# Initialize the node.
 	rospy.init_node('server')
 
-	# Create the service, specifying the name, the sercice message base type, and the callback function
+	# Create the service, specifying the name, the service message base type, and the callback function
 	# to be used to fulfil the requests.
 	service = rospy.Service('doubler', Doubler, callback)
 
