@@ -10,7 +10,7 @@
 import rospy
 import sys
 
-# Import tha base service message type.  Note that, as with the server, we need the .srv extension on
+# Import the base service message type.  Note that, as with the server, we need the .srv extension on
 # the package name (asuming we named the service message directory "srv", which is conventional).
 from rob599_basic.srv import Doubler
 
