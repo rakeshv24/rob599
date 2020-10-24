@@ -4,6 +4,8 @@
 # A node that subscribes to a topic, multiplies the number it gets, then publishes
 # that.
 #
+# multiplier.py
+#
 # Bill Smart
 #
 # This is a second example of a transformer node.  In this example, we're going

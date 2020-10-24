@@ -3,6 +3,8 @@
 
 # Basic topic subscriber example.
 #
+# subscriber.py
+#
 # Bill Smart
 #
 # This example shows the basic code for subscribing to a topic.

@@ -2,6 +2,8 @@
 
 # Example of the use of ROS parameters.
 #
+# parameters.py
+#
 # Bill Smart
 #
 # This shows how to get and set parameters in ROS.

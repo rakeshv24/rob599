@@ -2,6 +2,8 @@
 
 # A more encapsulated version of navigation for the Fetch.
 #
+# better_nav.py
+#
 # Bill Smart
 #
 # This example shows a more encapsulated version of basic navigation for the Fetch.  The functionality

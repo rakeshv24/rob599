@@ -2,6 +2,8 @@
 
 # Basic topic publisher example.
 #
+# publsher.py
+#
 # Bill Smart
 #
 # This example shows the basic code for publishing on topics.

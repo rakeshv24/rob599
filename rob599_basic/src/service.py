@@ -2,6 +2,8 @@
 
 # Example of a simple service.
 #
+# service.py
+#
 # Bill Smart
 #
 # This shows how to put together a simple service client in Python.  This depends on the service message

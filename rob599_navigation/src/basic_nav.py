@@ -2,6 +2,8 @@
 
 # Example of using the navigation stack to move the robot.
 #
+# basic_nav.py
+#
 # Bill Smart
 #
 # This is an example of a simple use of the nav stack to move the robot to a fixed position in the map.

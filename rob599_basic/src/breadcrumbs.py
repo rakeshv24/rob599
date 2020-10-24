@@ -2,6 +2,8 @@
 
 # An example of using markers and tf to drop a set of breadcrumbs.
 #
+# breadcrubs.py
+#
 # Bill Smart
 #
 # This example shows how we might build a simple breadcrumb system for the Fetch robot.  It shows

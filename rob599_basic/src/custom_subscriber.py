@@ -2,6 +2,8 @@
 
 # Example of using a custom message in a topic subscriber.
 #
+# custom_subscriber.py
+#
 # Bill Smart
 #
 # This shows how to use a custom message type with more than one data field in a subscriber.

@@ -2,6 +2,8 @@
 
 # A connection-aware publisher
 #
+# aware_publisher.py
+#
 # Bill Smart
 #
 # This example shows how to set up a publisher that only publishes a message if a

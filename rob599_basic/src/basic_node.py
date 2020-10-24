@@ -2,6 +2,8 @@
 
 # Basic structure of a Python node.
 #
+# basic_node.py
+#
 # Bill Smart
 #
 # This example shows the basic structure of a ROS node in Python.  This node doesn't

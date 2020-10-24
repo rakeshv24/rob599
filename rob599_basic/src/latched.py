@@ -2,6 +2,8 @@
 
 # Basic latched topic publisher example.
 #
+# latched.py
+#
 # Bill Smart
 #
 # This example shows how to use a latched topic.

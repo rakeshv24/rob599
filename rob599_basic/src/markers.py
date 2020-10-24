@@ -2,6 +2,8 @@
 
 # An example of publishing markers for rviz.
 #
+# markers.py
+#
 # Bill Smart
 #
 # This node will publish a spherical marker above the current robot position, as it drives around

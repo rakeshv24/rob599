@@ -2,6 +2,8 @@
 
 # An example of a simple action server.
 #
+# action_client.py
+#
 # Bill Smart
 #
 # An example of a simple action client, showing how to set up the callbacks.  This will use the

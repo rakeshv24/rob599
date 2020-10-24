@@ -2,6 +2,8 @@
 
 # An example of sending movement commands to the Fetch robot.
 #
+# mover.py
+#
 # Bill Smart
 #
 # This shows the basic mechanism for moving the Fetch robot by publishing Twist messages.

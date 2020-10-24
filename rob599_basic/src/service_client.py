@@ -2,6 +2,8 @@
 
 # Example of a siomple service client.
 #
+# service_cleitn.py
+#
 # Bill Smart
 #
 # This is a simple service client.

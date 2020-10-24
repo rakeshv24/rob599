@@ -3,6 +3,8 @@
 # A node that subscribes to a topic, doubles the number it gets, then publishes
 # that.
 #
+# doubler.py
+#
 # Bill Smart
 #
 # One of the common uses of ROS nodes is to transform data.  They listen for
