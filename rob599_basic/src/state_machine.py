@@ -4,6 +4,8 @@
 #
 # state_machine.py
 #
+# Bill Smart
+#
 # A more complex example of state machines, simulating a navigation task.
 
 
@@ -108,9 +110,11 @@ if __name__ == '__main__':
 			smach.StateMachine.add(rooms[i], GoTo(rooms[i]),
 				transitions={'success':rooms[i + 1], 'failure':rooms[i]})
 
+	# Start up an introspection server, so that we can look at the state machine in smach_viewer.
 	sis = smach_ros.IntrospectionServer('room_checker_machine', state_machine, '/STATE_MACHINE_ROOT')
 	sis.start()
 
+	# Start the state machine
 	final_outcome = state_machine.execute()
 
 	# We're going to put in a spin() just to keep the node alive, so we can look at the state machine structure.

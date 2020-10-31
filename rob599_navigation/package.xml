@@ -57,6 +57,8 @@
 
   <depend>actionlib</depend>
   <depend>tf</depend>
+  <depend>smach</depend>
+  <depend>smach_ros</depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>

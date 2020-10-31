@@ -68,11 +68,12 @@ if __name__ == '__main__':
 		# that will end the state machine execution.
 		smach.StateMachine.add('State 2', PrintState('Second state'), transitions={'printed':'done'})
 
+	# Start up an introspection server, so that we can look at the state machine in smach_viewer.
 	sis = smach_ros.IntrospectionServer('simple_state_machine', state_machine, '/STATE_MACHINE_ROOT')
 	sis.start()
 
+	# Start up the state machine.
 	final_outcome = state_machine.execute()
 
 	# We're going to put in a spin() just to keep the node alive, so we can look at the state machine structure.
 	rospy.spin()
-	

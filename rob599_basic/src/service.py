@@ -26,7 +26,7 @@ from rob599_basic.srv import Doubler, DoublerResponse
 def callback(request):
 	rospy.loginfo('Got {0}'.format(request.number))
 
-	# The return from the callback is used as the response from the servic call.
+	# The return from the callback is used as the response from the service call.
 	return DoublerResponse(request.number * 2)
 
 
