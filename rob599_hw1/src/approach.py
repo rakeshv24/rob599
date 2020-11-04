@@ -52,7 +52,7 @@ class Approacher:
 		self.pub = rospy.Publisher('cmd_vel', Twist, queue_size=10)
 
 		# Set up a service client to allow us to change the distance with a service call.
-		self.service = rospy.Service('set_distance', SetDistance, self.set_distance)
+		self.service = rospy.Service('stopping_distance', SetDistance, self.set_distance)
 
 		# Set up a simple action server to handle action requests.  As usual, we create it in stopped mode, and then
 		# explicitly call start on it.  We're also going to keep a helper variable around to indicate whether or not
