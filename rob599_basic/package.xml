@@ -56,7 +56,10 @@
   <build_export_depend>rospy</build_export_depend>
   <exec_depend>rospy</exec_depend>
 
+  <depend>roscpp</depend>
+
   <depend>std_msgs</depend>
+  <depend>actionlib</depend>
   <depend>actionlib_msgs</depend>
   <depend>tf</depend>
   <depend>smach</depend>

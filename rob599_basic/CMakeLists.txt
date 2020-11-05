@@ -9,8 +9,10 @@ project(rob599_basic)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   rospy
+  roscpp
   std_msgs
   message_generation
+  actionlib
   actionlib_msgs
 )
 
@@ -203,3 +205,70 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+
+# These lines tell catkin about basic_node.  The first says how to build the executable, and the second how to link it.
+add_executable(basic_node
+  src/basic_node.cpp
+)
+
+target_link_libraries(basic_node
+  ${catkin_LIBRARIES}
+)
+
+# publisher
+add_executable(publisher
+  src/publisher.cpp
+)
+
+target_link_libraries(publisher
+  ${catkin_LIBRARIES}
+)
+
+# subscriber
+add_executable(subscriber
+  src/subscriber.cpp
+)
+
+target_link_libraries(subscriber
+  ${catkin_LIBRARIES}
+)
+
+# service
+add_executable(service
+  src/service.cpp
+)
+
+target_link_libraries(service
+  ${catkin_LIBRARIES}
+)
+
+# service client
+add_executable(service_client
+  src/service_client.cpp
+)
+
+target_link_libraries(service_client
+  ${catkin_LIBRARIES}
+)
+
+# action server
+add_executable(action_server
+  src/action_server.cpp
+)
+
+target_link_libraries(action_server
+  ${catkin_LIBRARIES}
+)
+
+# action client
+add_executable(action_client
+  src/action_client.cpp
+)
+
+target_link_libraries(action_client
+  ${catkin_LIBRARIES}
+)
+
+# Optimize the compile
+#add_compile_options(-O)
