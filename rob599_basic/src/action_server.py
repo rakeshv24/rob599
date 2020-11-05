@@ -43,7 +43,7 @@ def callback(goal):
 	# We're going to build a list of Fibonacci numbers up to the number specified in the goal message.
 	# Again, this is intentionally naive to illustrate the use of actions.
 	result = []
-	for i in range(goal.number):
+	for i in range(goal.number + 1):
 		result.append(fibonacci(i))
 
 		# Publish feedback, so that the caller knows about progress, if it cares.
