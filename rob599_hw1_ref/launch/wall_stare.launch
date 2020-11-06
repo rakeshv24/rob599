@@ -1,0 +1,23 @@
+<launch>
+
+<!--
+	ROB 599 Homework 1 Reference Solution
+
+	wall_stare.launch
+
+	Bill Smart
+
+	A launch file for the laser filtering and wall-approaching nodes, that takes care of topic
+	remapping.
+-->
+
+<!-- Launch the filter node, and do all of the topic remapping here.  -->
+<node pkg="rob599_hw1" name="front_filter" type="front_filter_faster.py">
+  <remap from="input_scan" to="base_scan_raw" />
+  <remap from="output_scan" to="scan" />
+</node>
+
+<!-- The approach node only needs to be started, since we've taken care of topic names already. -->
+<node pkg="rob599_hw1" name="approacher" type="approach.py" />
+
+</launch>

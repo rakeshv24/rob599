@@ -1,0 +1,8 @@
+# goal
+float32 distance
+---
+# result
+float32 final
+---
+# feedback
+float32 error
