@@ -22,7 +22,7 @@ int main(int argc, char **argv) {
 	ros::Publisher pub = node.advertise<std_msgs::Int64>("counter", 10);
 
 	// Set a publication rate of 10 Hz.
-	ros::Rate rate(10);
+	ros::Rate rate(1);
 
 	// Initialize a counter.  Note that we have to give it an explicit type.
 	int counter = 0;

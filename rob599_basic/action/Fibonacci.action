@@ -2,7 +2,7 @@
 int64 number
 ---
 # result
-int32[] sequence
+int64[] sequence
 ---
 # feedback
 int64 progress
