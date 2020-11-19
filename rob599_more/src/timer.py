@@ -6,13 +6,12 @@ import sys
 
 
 def callback(event):
-	rospy.loginfo('Callback fired: {0}'.format(event))
+	rospy.loginfo('Callback fired')
 
 
 if __name__ == '__main__':
 	rospy.init_node('timer', argv=sys.argv)
 
-	rospy.Timer(rospy.Duration(1), callback)
+	timer = rospy.Timer(rospy.Duration(1), callback)
 
 	rospy.spin()
-	

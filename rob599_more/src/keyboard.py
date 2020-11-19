@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
 	pub = rospy.Publisher('keyboard', String, queue_size=10)
 
-	while True:
+	while not rospy.is_shutdown():
 		text = input('> ')
 
 		pub.publish(text)
