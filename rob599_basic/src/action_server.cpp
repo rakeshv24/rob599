@@ -66,7 +66,8 @@ int main(int argc, char **argv) {
 	// to start it up at creation).  This is cleaner than doing a global variable to pass the server name.  boost::bind will cause the callback
 	// to be called, with a pointer to server as the second argument.  This gives the callback access to the server instance.  There are other
 	// ways to do this, but this one is clean and doesn't involve any nasty global variable scopes.
-	actionlib::SimpleActionServer<rob599_basic::FibonacciAction> server(node, "fibonacci", boost::bind(&action_callback, _1, &server), false);
+	actionlib::SimpleActionServer<rob599_basic::FibonacciAction> server(node, "fibonacci",
+		boost::bind(&action_callback, _1, &server), false);
 	server.start();
 	ROS_INFO("Fibonacci action server started");
 
