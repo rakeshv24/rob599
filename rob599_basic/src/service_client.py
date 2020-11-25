@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-# Example of a siomple service client.
+# Example of a simple service client.
 #
-# service_cleitn.py
+# service_client.py
 #
 # Bill Smart
 #
