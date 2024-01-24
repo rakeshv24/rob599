@@ -18,6 +18,9 @@ import rospy
 import actionlib
 import sys
 
+from time import sleep
+
+
 # Since actions are not first-class citizens, they're implemented using a set of automatically
 # defined messages.  You'll need to import the Action, Goal, Feedback, and Result messages.
 from rob599_basic.msg import FibonacciAction, FibonacciGoal, FibonacciFeedback, FibonacciResult
@@ -56,6 +59,9 @@ def callback(goal):
 		if server.is_new_goal_available():
 			server.set_preempted(FibonacciResult(sequence=result))
 			return
+
+		# Artificially wait for a bit.
+		sleep(1)
 
 	# Once we have the result assembled, we signal to the action server back end that it's available
 	# with the set_succeeded() function.  There are also equivalent set_aborted() amd set_preempted()

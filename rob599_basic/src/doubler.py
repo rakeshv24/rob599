@@ -39,11 +39,11 @@ if __name__ == '__main__':
 	# Initilize the node.
 	rospy.init_node('doubler', argv=sys.argv)
 
-	# Set up a subscriber.
-	subscriber = rospy.Subscriber('number', Int64, callback)
-
 	# Set up a publisher.
 	publisher = rospy.Publisher('doubled', Int64, queue_size=10)
+
+	# Set up a subscriber.
+	subscriber = rospy.Subscriber('number', Int64, callback)
 
 	# Hand over control to ROS.
 	rospy.spin()
