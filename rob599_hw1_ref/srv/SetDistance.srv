@@ -1,5 +1,0 @@
-# Input
-float32 distance
----
-# Output
-bool success
